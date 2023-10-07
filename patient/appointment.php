@@ -381,6 +381,26 @@
             </div>
             </div>
             ';
+        }elseif($action=='booking-reject'){
+            echo '
+            <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <center>
+                    <br><br>
+                        <h2>預約失敗.</h2>
+                        <a class="close" href="appointment.php">&times;</a>
+                        <div class="content">
+                        您已預約，不能重複預約.<br><br>
+                        </div>
+                        <div style="display: flex;justify-content: center;">
+                        
+                        <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;OK&nbsp;&nbsp;</font></button></a>
+                        <br><br><br><br>
+                        </div>
+                    </center>
+            </div>
+            </div>
+            ';
         }elseif($action=='drop'){
             $title=$_GET["title"];
             $docname=$_GET["doc"];

@@ -34,11 +34,22 @@
             $scheduleid=$_POST["scheduleid"];
             $date=$_POST["date"];
             $scheduleid=$_POST["scheduleid"];
-            $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
-            $result= $database->query($sql2);
-            //echo $apponom;
-            header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
 
+            $sqlcheck= "select count(*) from appointment where pid=? and scheduleid=?";
+            $stmt = $database->prepare($sqlcheck);
+            $stmt->bind_param("ss",$userid,$scheduleid);
+            $stmt->execute();
+            $checkcount = $stmt->get_result();
+
+            if($checkcount == "0")
+            {
+                $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
+                $result= $database->query($sql2);
+                //echo $apponom;
+                header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
+            }else{
+                header("location: appointment.php?action=booking-reject&id=".$apponum."&titleget=none");
+            }
         }
     }
  ?>
