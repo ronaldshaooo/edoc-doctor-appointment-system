@@ -44,7 +44,7 @@
     $stmt = $database->prepare($sqlmain);
     $stmt->bind_param("s",$useremail);
     $stmt->execute();
-    $result = $stmt->get_result();
+    $userrow = $stmt->get_result();
     $userfetch=$userrow->fetch_assoc();
     $userid= $userfetch["pid"];
     $username=$userfetch["pname"];
