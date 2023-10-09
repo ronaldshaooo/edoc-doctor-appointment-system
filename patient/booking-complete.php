@@ -45,10 +45,24 @@
 
             if($count == 0)
             {
-                $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
-                $result= $database->query($sql2);
-                //echo $apponom;
-                header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
+                $blacklistcheck = "select count(*) FROM blacklist WHERE pid=? AND scheduleid=? AND appodate >= DATE_FORMAT(CURDATE(), '%Y-%m-01') - INTERVAL 3 MONTH";
+                $stmt = $database->prepare($blacklistcheck);
+                $stmt->bind_param("ss",$userid,$scheduleid);
+                $stmt->execute();
+                $blacklistrow = $stmt->get_result();
+                $blacklistfetch=$blacklistrow->fetch_assoc();
+                $blacklistcount=$blacklistfetch["count(*)"];
+                
+                //3個月內3次沒報到
+                if($blacklistcount < 3){
+                    $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
+                    $result= $database->query($sql2);
+                    //echo $apponom;
+                    header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
+                }else{
+                    //黑名單
+                    header("location: appointment.php?action=booking-blacklist&id=".$count."&titleget=none");
+                }
             }else{
                 header("location: appointment.php?action=booking-reject&id=".$count."&titleget=none");
             }

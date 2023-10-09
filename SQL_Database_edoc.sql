@@ -227,6 +227,21 @@ INSERT INTO `specialties` (`id`, `sname`) VALUES
 (55, 'Vascular surgery'),
 (56, 'Venereology');
 
+--
+-- Table structure for table `blacklist`
+--
+
+DROP TABLE IF EXISTS `blacklist`;
+CREATE TABLE IF NOT EXISTS `blacklist` (
+  `blackid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(10) DEFAULT NULL,
+  `scheduleid` int(10) DEFAULT NULL,
+  `appodate` date DEFAULT NULL,
+  PRIMARY KEY (`blackid`),
+  KEY `pid` (`pid`),
+  KEY `scheduleid` (`scheduleid`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
 -- --------------------------------------------------------
 
 --
