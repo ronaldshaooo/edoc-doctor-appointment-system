@@ -70,6 +70,24 @@ INSERT INTO `appointment` (`appoid`, `pid`, `apponum`, `scheduleid`, `appodate`)
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `appointment_review`
+--
+
+DROP TABLE IF EXISTS `appointment_review`;
+CREATE TABLE IF NOT EXISTS `appointment_review` (
+  `reviewid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(10) DEFAULT NULL,
+  `scheduleid` int(10) DEFAULT NULL,
+  `rank` int(2) DEFAULT NULL,
+  `appodate` date DEFAULT NULL,
+  PRIMARY KEY (`reviewid`),
+  KEY `pid` (`pid`),
+  KEY `scheduleid` (`scheduleid`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `doctor`
 --
 

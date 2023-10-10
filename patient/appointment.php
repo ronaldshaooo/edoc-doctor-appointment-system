@@ -287,6 +287,7 @@
                                                                 </div>
                                                                 <br>
                                                                 <a href="?action=drop&id='.$appoid.'&title='.$title.'&doc='.$docname.'" ><button  class="login-btn btn-primary-soft btn "  style="padding-top:11px;padding-bottom:11px;width:100%"><font class="tn-in-text">Cancel Booking</font></button></a>
+                                                                <a href="?action=rank&id='.$appoid.'&title='.$title.'&doc='.$docname.'" ><button  class="login-btn btn-primary-soft btn "  style="margin-top:25px;padding-top:11px;padding-bottom:11px;width:100%";><font class="tn-in-text">給看診過程按讚</font></button></a>
                                                         </div>
                                                                 
                                                     </div>
@@ -438,8 +439,32 @@
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
-                        <a href="delete-appointment.php?id='.$id.'" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="delete-appointment.php?id='.$id.'&rank=0" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
                         <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
+
+                        </div>
+                    </center>
+            </div>
+            </div>
+            '; 
+        }elseif($action=='rank'){
+            $title=$_GET["title"];
+            $docname=$_GET["doc"];
+            
+            echo '
+            <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <center>
+                        <h2>您的鼓勵就是對我們最大的支持</h2>
+                        <a class="close" href="appointment.php">&times;</a>
+                        <div class="content">
+                            是否對這次的預約看診流程感到滿意呢?<br><br>
+                            給個讚就是對我們最大的鼓勵</b><br>
+                            
+                        </div>
+                        <div style="display: flex;justify-content: center;">
+                        <a href="delete-appointment.php?id='.$id.'&rank=1" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;讚!&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;不了&nbsp;&nbsp;</font></button></a>
 
                         </div>
                     </center>
