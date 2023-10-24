@@ -77,6 +77,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
+                                    <a href="../logout.php" ><input type="button" value="登出" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
                     </table>
@@ -168,7 +169,7 @@
                             <h3>在這裡搜尋醫師</h3>
                             <form action="schedule.php" method="post" style="display: flex">
 
-                                <input type="search" name="search" class="input-text " placeholder="Search Doctor and We will Find The Session Available" list="doctors" style="width:45%;">&nbsp;&nbsp;
+                                <input type="search" name="search" class="input-text " placeholder="請輸入醫師姓名" list="doctors" style="width:45%;">&nbsp;&nbsp;
                                 
                                 <?php
                                     echo '<datalist id="doctors">';
@@ -186,7 +187,7 @@
     ?>
                                 
                            
-                                <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                                <input type="Submit" value="搜尋" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                             
                             <br>
                             <br>
@@ -306,7 +307,7 @@
                                                 <th class="table-headin">
                                                     
                                                 
-                                                Session Title
+                                                科別
                                                 
                                                 </th>
                                                 
