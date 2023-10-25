@@ -430,12 +430,12 @@
             <div id="popup1" class="overlay">
                     <div class="popup">
                     <center>
-                        <h2>Are you sure?</h2>
+                        <h2>確定取消嗎?</h2>
                         <a class="close" href="appointment.php">&times;</a>
                         <div class="content">
-                            You want to Cancel this Appointment?<br><br>
-                            Session Name: &nbsp;<b>'.substr($title,0,40).'</b><br>
-                            Doctor name&nbsp; : <b>'.substr($docname,0,40).'</b><br><br>
+                            您將取消此預約。<br><br>
+                            科別: &nbsp;<b>'.substr($title,0,40).'</b><br>
+                            醫師姓名&nbsp; : <b>'.substr($docname,0,40).'</b><br><br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
