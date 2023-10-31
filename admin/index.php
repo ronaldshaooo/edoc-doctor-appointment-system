@@ -129,7 +129,7 @@
                             </td>
                             <td width="15%">
                                 <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
-                                    Today's Date
+                                    今天日期
                                 </p>
                                 <p class="heading-sub12" style="padding: 0;margin: 0;">
                                     <?php 
@@ -266,22 +266,22 @@
                                         <tr>    
                                                 <th class="table-headin" style="font-size: 12px;">
                                                         
-                                                    Appointment number
+                                                    預約號碼
                                                     
                                                 </th>
                                                 <th class="table-headin">
-                                                    Patient name
-                                                </th>
-                                                <th class="table-headin">
-                                                    
-                                                
-                                                    Doctor
-                                                    
+                                                    患者姓名
                                                 </th>
                                                 <th class="table-headin">
                                                     
                                                 
-                                                    Session
+                                                    醫師姓名
+                                                    
+                                                </th>
+                                                <th class="table-headin">
+                                                    
+                                                
+                                                    科目
                                                     
                                                 </th>
                                             </tr>
