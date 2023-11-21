@@ -104,7 +104,7 @@
                                 
                                 <form action="doctors.php" method="post" class="header-search">
         
-                                    <input type="search" name="search" class="input-text header-searchbar" placeholder="Search Doctor name or Email" list="doctors">&nbsp;&nbsp;
+                                    <input type="search" name="search" class="input-text header-searchbar" placeholder="搜尋醫師姓名或信箱" list="doctors">&nbsp;&nbsp;
                                     
                                     <?php
                                         echo '<datalist id="doctors">';
@@ -122,7 +122,7 @@
                                     ?>
                                     
                                
-                                    <input type="Submit" value="Search" class="login-btn btn-primary-soft btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                                    <input type="Submit" value="搜尋" class="login-btn btn-primary-soft btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                                 
                                 </form>
                                 
