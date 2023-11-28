@@ -22,27 +22,6 @@ SET time_zone = "+00:00";
 -- Database: `edoc`
 --
 
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-DROP TABLE IF EXISTS `admin`;
-CREATE TABLE IF NOT EXISTS `admin` (
-  `aemail` varchar(255) NOT NULL,
-  `apassword` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`aemail`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`aemail`, `apassword`) VALUES
-('admin@test.com', '123');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `appointment`
@@ -278,7 +257,6 @@ CREATE TABLE IF NOT EXISTS `webuser` (
 --
 
 INSERT INTO `webuser` (`email`, `usertype`) VALUES
-('admin@test.com', 'a'),
 ('doctor1@test.com', 'd'),
 ('patient1@test.com', 'p'),
 ('patient2@test.com', 'p');
