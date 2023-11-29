@@ -480,15 +480,8 @@
             $row=$result->fetch_assoc();
             $name=$row["docname"];
             $email=$row["docemail"];
-            $spe=$row["specialties"];
             
-            $sqlmain= "select sname from specialties where id=?";
-            $stmt = $database->prepare($sqlmain);
-            $stmt->bind_param("s",$spe);
-            $stmt->execute();
-            $spcil_res = $stmt->get_result();
-            $spcil_array= $spcil_res->fetch_assoc();
-            $spcil_name=$spcil_array["sname"];
+            $spcil_name="耳鼻喉科";
             $nic=$row['docnic'];
             $tele=$row['doctel'];
             echo '
@@ -554,7 +547,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="spec" class="form-label">Specialties: </label>
+                                    <label for="spec" class="form-label">科別: </label>
                                     
                                 </td>
                             </tr>

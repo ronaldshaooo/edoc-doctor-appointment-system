@@ -229,10 +229,8 @@
                                     $docid=$row["docid"];
                                     $name=$row["docname"];
                                     $email=$row["docemail"];
-                                    $spe=$row["specialties"];
-                                    $spcil_res= $database->query("select sname from specialties where id='$spe'");
-                                    $spcil_array= $spcil_res->fetch_assoc();
-                                    $spcil_name=$spcil_array["sname"];
+                                    
+                                    $spcil_name="耳鼻喉科";
                                     echo '<tr>
                                         <td> &nbsp;'.
                                         substr($name,0,30)
@@ -308,14 +306,8 @@
 
             $name=$row["docname"];
             $email=$row["docemail"];
-            $spe=$row["specialties"];
-            
-            $stmt = $database->prepare("select sname from specialties where id=?");
-            $stmt->bind_param("s",$spe);
-            $stmt->execute();
-            $spcil_res = $stmt->get_result();
-            $spcil_array= $spcil_res->fetch_assoc();
-            $spcil_name=$spcil_array["sname"];
+           
+            $spcil_name="耳鼻喉科";
             $nic=$row['docnic'];
             $tele=$row['doctel'];
             echo '
@@ -445,16 +437,8 @@
        
             $name=$row["docname"];
             $email=$row["docemail"];
-            $spe=$row["specialties"];
-            
-            $sqlmain= "select sname from specialties where id='?";
-            $stmt = $database->prepare($sqlmain);
-            $stmt->bind_param("s",$spe);
-            $stmt->execute();
-            $result = $stmt->get_result();
-
-            $spcil_array= $spcil_res->fetch_assoc();
-            $spcil_name=$spcil_array["sname"];
+           
+            $spcil_name="耳鼻喉科";
             $nic=$row['docnic'];
             $tele=$row['doctel'];
 
@@ -536,28 +520,13 @@
                                     </tr>
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <label for="spec" class="form-label">Choose specialties: (Current'.$spcil_name.')</label>
+                                            <label for="spec" class="form-label"> 科別: 耳鼻喉科</label>
                                             
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <select name="spec" id="" class="box">';
-                                                
-                
-                                                $list11 = $database->query("select  * from  specialties;");
-                
-                                                for ($y=0;$y<$list11->num_rows;$y++){
-                                                    $row00=$list11->fetch_assoc();
-                                                    $sn=$row00["sname"];
-                                                    $id00=$row00["id"];
-                                                    echo "<option value=".$id00.">$sn</option><br/>";
-                                                };
-                
-                
-                
-                                                
-                                echo     '       </select><br><br>
+                                            耳鼻喉科<br><br>
                                         </td>
                                     </tr>
                                     <tr>
