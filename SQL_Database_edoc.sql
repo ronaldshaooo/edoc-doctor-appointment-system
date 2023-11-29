@@ -164,25 +164,6 @@ CREATE TABLE IF NOT EXISTS `blacklist` (
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `webuser`
---
-
-DROP TABLE IF EXISTS `webuser`;
-CREATE TABLE IF NOT EXISTS `webuser` (
-  `email` varchar(255) NOT NULL,
-  `usertype` char(1) DEFAULT NULL,
-  PRIMARY KEY (`email`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `webuser`
---
-
-INSERT INTO `webuser` (`email`, `usertype`) VALUES
-('doctor1@test.com', 'd'),
-('patient1@test.com', 'p'),
-('patient2@test.com', 'p');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

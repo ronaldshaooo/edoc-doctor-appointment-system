@@ -104,11 +104,6 @@
                         <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">我的預約</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">設定</p></a></div>
-                    </td>
-                </tr>
                 
             </table>
         </div>
