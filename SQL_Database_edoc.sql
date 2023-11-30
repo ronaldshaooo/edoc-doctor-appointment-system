@@ -155,12 +155,15 @@ DROP TABLE IF EXISTS `blacklist`;
 CREATE TABLE IF NOT EXISTS `blacklist` (
   `blackid` int(11) NOT NULL AUTO_INCREMENT,
   `pid` int(10) DEFAULT NULL,
-  `scheduleid` int(10) DEFAULT NULL,
   `appodate` date DEFAULT NULL,
   PRIMARY KEY (`blackid`),
-  KEY `pid` (`pid`),
-  KEY `scheduleid` (`scheduleid`)
+  KEY `pid` (`pid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `blacklist` (`blackid`, `pid`, `appodate`) VALUES
+(1, 2, '2023-12-10'),
+(2, 2, '2023-12-11'),
+(3, 2, '2023-12-13');
 
 -- --------------------------------------------------------
 
