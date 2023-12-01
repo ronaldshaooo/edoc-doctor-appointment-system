@@ -63,7 +63,7 @@
                          </tr>
                          <tr>
                              <td colspan="2">
-                                 <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                 <a href="../logout.php" ><input type="button" value="登出" class="logout-btn btn-primary-soft btn"></a>
                              </td>
                          </tr>
                  </table>
@@ -71,28 +71,23 @@
              </tr>
              <tr class="menu-row" >
                  <td class="menu-btn menu-icon-dashbord " >
-                     <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">Dashboard</p></a></div></a>
+                     <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">儀表板</p></a></div></a>
                  </td>
              </tr>
              <tr class="menu-row">
                  <td class="menu-btn menu-icon-appoinment  ">
-                     <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">My Appointments</p></a></div>
+                     <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">我的看診清單</p></a></div>
                  </td>
              </tr>
              
              <tr class="menu-row" >
                  <td class="menu-btn menu-icon-session menu-active menu-icon-session-active">
-                     <a href="schedule.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">My Sessions</p></div></a>
+                     <a href="schedule.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">我的診療時段</p></div></a>
                  </td>
              </tr>
              <tr class="menu-row" >
                  <td class="menu-btn menu-icon-patient">
-                     <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">My Patients</p></a></div>
-                 </td>
-             </tr>
-             <tr class="menu-row" >
-                 <td class="menu-btn menu-icon-settings">
-                     <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
+                     <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">我的病患</p></a></div>
                  </td>
              </tr>
              
@@ -102,15 +97,15 @@
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                     <td width="13%" >
-                    <a href="schedule.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
+                    <a href="schedule.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">上一頁</font></button></a>
                     </td>
                     <td>
-                        <p style="font-size: 23px;padding-left:12px;font-weight: 600;">My Sessions</p>
+                        <p style="font-size: 23px;padding-left:12px;font-weight: 600;">我的診療時段</p>
                                            
                     </td>
                     <td width="15%">
                         <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
-                            Today's Date
+                            今天日期
                         </p>
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
@@ -136,7 +131,7 @@
                 <tr>
                     <td colspan="4" style="padding-top:10px;width: 100%;" >
                     
-                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">My Sessions (<?php echo $list110->num_rows; ?>) </p>
+                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">我的診療時段 (<?php echo $list110->num_rows; ?>) </p>
                     </td>
                     
                 </tr>
@@ -150,7 +145,7 @@
 
                            </td> 
                         <td width="5%" style="text-align: center;">
-                        Date:
+                        日期:
                         </td>
                         <td width="30%">
                         <form action="" method="post">
@@ -160,7 +155,7 @@
                         </td>
                         
                     <td width="12%">
-                        <input type="submit"  name="filter" value=" Filter" class=" btn-primary-soft btn button-icon btn-filter"  style="padding: 15px; margin :0;width:100%">
+                        <input type="submit"  name="filter" value="篩選" class=" btn-primary-soft btn button-icon btn-filter"  style="padding: 15px; margin :0;width:100%">
                         </form>
                     </td>
 
@@ -197,25 +192,25 @@
                                 <th class="table-headin">
                                     
                                 
-                                Session Title
+                                診療科別
                                 
                                 </th>
                                 
                                 
                                 <th class="table-headin">
                                     
-                                    Sheduled Date & Time
+                                    看診時間
                                     
                                 </th>
                                 <th class="table-headin">
                                     
-                                Max num that can be booked
+                                最大看診數量
                                     
                                 </th>
                                 
                                 <th class="table-headin">
                                     
-                                    Events
+                                    操作
                                     
                                 </tr>
                         </thead>
@@ -234,8 +229,8 @@
                                     <img src="../img/notfound.svg" width="25%">
                                     
                                     <br>
-                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
-                                    <a class="non-style-link" href="schedule.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Show all Sessions &nbsp;</font></button>
+                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">我們找不到這個關鍵字結果 !</p>
+                                    <a class="non-style-link" href="schedule.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; 顯示所有診療時段 &nbsp;</font></button>
                                     </a>
                                     </center>
                                     <br><br><br><br>
@@ -267,9 +262,9 @@
                                         <td>
                                         <div style="display:flex;justify-content: center;">
                                         
-                                        <a href="?action=view&id='.$scheduleid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                        <a href="?action=view&id='.$scheduleid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">瀏覽</font></button></a>
                                        &nbsp;&nbsp;&nbsp;
-                                       <a href="?action=drop&id='.$scheduleid.'&name='.$title.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-delete"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Cancel Session</font></button></a>
+                                       <a href="?action=drop&id='.$scheduleid.'&name='.$title.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-delete"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">取消診療時段</font></button></a>
                                         </div>
                                         </td>
                                     </tr>';
@@ -349,14 +344,14 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">瀏覽細節.</p><br><br>
                                 </td>
                             </tr>
                             
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
-                                    <label for="name" class="form-label">Session Title: </label>
+                                    <label for="name" class="form-label">診療科別: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -367,7 +362,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="Email" class="form-label">Doctor of this session: </label>
+                                    <label for="Email" class="form-label">醫生: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -377,7 +372,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">Scheduled Date: </label>
+                                    <label for="nic" class="form-label">Scheduled 日期: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -387,7 +382,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="Tele" class="form-label">Scheduled Time: </label>
+                                    <label for="Tele" class="form-label">診療時段: </label>
                                 </td>
                             </tr>
                             <tr>

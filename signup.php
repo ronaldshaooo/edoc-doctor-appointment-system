@@ -59,47 +59,47 @@ if($_POST){
         <table border="0">
             <tr>
                 <td colspan="2">
-                    <p class="header-text">Let's Get Started</p>
-                    <p class="sub-text">Add Your Personal Details to Continue</p>
+                    <p class="header-text">我們開始吧!</p>
+                    <p class="sub-text">輸入個人資訊</p>
                 </td>
             </tr>
             <tr>
                 <form action="" method="POST" >
                 <td class="label-td" colspan="2">
-                    <label for="name" class="form-label">Name: </label>
+                    <label for="name" class="form-label">姓名: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td">
-                    <input type="text" name="fname" class="input-text" placeholder="First Name" required>
+                    <input type="text" name="fname" class="input-text" placeholder="姓氏" required>
                 </td>
                 <td class="label-td">
-                    <input type="text" name="lname" class="input-text" placeholder="Last Name" required>
+                    <input type="text" name="lname" class="input-text" placeholder="名字" required>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="address" class="form-label">Address: </label>
+                    <label for="address" class="form-label">地址: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="text" name="address" class="input-text" placeholder="Address" required>
+                    <input type="text" name="address" class="input-text" placeholder="地址" required>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="nic" class="form-label">NIC: </label>
+                    <label for="nic" class="form-label">身分證字號: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="text" name="nic" class="input-text" placeholder="NIC Number" required>
+                    <input type="text" name="nic" class="input-text" placeholder="身分證字號" required>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="dob" class="form-label">Date of Birth: </label>
+                    <label for="dob" class="form-label">生日: </label>
                 </td>
             </tr>
             <tr>
@@ -114,18 +114,18 @@ if($_POST){
 
             <tr>
                 <td>
-                    <input type="reset" value="Reset" class="login-btn btn-primary-soft btn" >
+                    <input type="reset" value="重設" class="login-btn btn-primary-soft btn" >
                 </td>
                 <td>
-                    <input type="submit" value="Next" class="login-btn btn-primary btn">
+                    <input type="submit" value="繼續" class="login-btn btn-primary btn">
                 </td>
 
             </tr>
             <tr>
                 <td colspan="2">
                     <br>
-                    <label for="" class="sub-text" style="font-weight: 280;">Already have an account&#63; </label>
-                    <a href="login.php" class="hover-link1 non-style-link">Login</a>
+                    <label for="" class="sub-text" style="font-weight: 280;">已經有帳號了嗎?&#63; </label>
+                    <a href="login.php" class="hover-link1 non-style-link">登入以繼續</a>
                     <br><br><br>
                 </td>
             </tr>

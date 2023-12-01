@@ -35,7 +35,7 @@
             $scheduleid=$userfetch["scheduleid"];
             $appodate=$userfetch["appodate"];
 
-            $sql2="insert into blacklist(pid,scheduleid,appodate) values ($pid,$scheduleid,'$appodate')";
+            $sql2="insert into blacklist(pid,appodate) values ($pid,'$appodate')";
             $result= $database->query($sql2);
 
             $sql= $database->query("delete from appointment where appoid='$id';");

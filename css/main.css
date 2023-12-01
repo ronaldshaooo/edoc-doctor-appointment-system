@@ -193,6 +193,7 @@ body{
     font-weight: 500;
     padding: 10px;
     border-bottom: 3px solid var(--primarycolor);
+    text-align-last: left;
 }
 
 .abc{

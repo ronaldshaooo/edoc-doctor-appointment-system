@@ -95,35 +95,35 @@
         <table border="0" style="margin: 0;padding: 0;width: 60%;">
             <tr>
                 <td>
-                    <p class="header-text">Welcome Back!</p>
+                    <p class="header-text">歡迎回來!</p>
                 </td>
             </tr>
         <div class="form-body">
             <tr>
                 <td>
-                    <p class="sub-text">Login with your details to continue</p>
+                    <p class="sub-text">登入以繼續</p>
                 </td>
             </tr>
             <tr>
                 <form action="" method="POST" >
                 <td class="label-td">
-                    <label for="useremail" class="form-label">Email: </label>
+                    <label for="useremail" class="form-label">信箱: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td">
-                    <input type="email" name="useremail" class="input-text" placeholder="Email Address" required>
+                    <input type="email" name="useremail" class="input-text" placeholder="信箱" required>
                 </td>
             </tr>
             <tr>
                 <td class="label-td">
-                    <label for="userpassword" class="form-label">Password: </label>
+                    <label for="userpassword" class="form-label">密碼: </label>
                 </td>
             </tr>
 
             <tr>
                 <td class="label-td">
-                    <input type="Password" name="userpassword" class="input-text" placeholder="Password" required>
+                    <input type="Password" name="userpassword" class="input-text" placeholder="密碼" required>
                 </td>
             </tr>
 
@@ -153,7 +153,7 @@
         <tr>
                 <td>
                     <br>
-                    <label for="" class="sub-text" style="font-weight: 280;">Don't have an account&#63; </label>
+                    <label for="" class="sub-text" style="font-weight: 280;">還沒有帳號嗎?&#63; </label>
                     <a href="signup.php" class="hover-link1 non-style-link">病患註冊</a>
                     <br><br><br>
                 </td>
