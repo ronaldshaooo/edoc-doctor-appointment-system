@@ -38,7 +38,7 @@ if($_POST){
         'fname'=>$_POST['fname'],
         'lname'=>$_POST['lname'],
         'address'=>$_POST['address'],
-        'nic'=>$_POST['nic'],
+        'idc'=>$_POST['idc'],
         'dob'=>$_POST['dob']
     );
 
@@ -89,12 +89,12 @@ if($_POST){
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="nic" class="form-label">身分證字號: </label>
+                    <label for="idc" class="form-label">身分證字號: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="text" name="nic" class="input-text" placeholder="身分證字號" required>
+                    <input type="text" name="idc" class="input-text" placeholder="身分證字號" required>
                 </td>
             </tr>
             <tr>

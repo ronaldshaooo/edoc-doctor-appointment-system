@@ -303,7 +303,7 @@
             $email=$row["docemail"];
            
             $spcil_name="耳鼻喉科";
-            $nic=$row['docnic'];
+            $idc=$row['docidc'];
             $tele=$row['doctel'];
             echo '
             <div id="popup1" class="overlay">
@@ -348,12 +348,12 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
+                                    <label for="idc" class="form-label">idc: </label>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                '.$nic.'<br><br>
+                                '.$idc.'<br><br>
                                 </td>
                             </tr>
                             <tr>
@@ -434,7 +434,7 @@
             $email=$row["docemail"];
            
             $spcil_name="耳鼻喉科";
-            $nic=$row['docnic'];
+            $idc=$row['docidc'];
             $tele=$row['doctel'];
 
             $error_1=$_GET["error"];
@@ -495,12 +495,12 @@
                                     
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <label for="nic" class="form-label">NIC: </label>
+                                            <label for="idc" class="form-label">idc: </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <input type="text" name="nic" class="input-text" placeholder="NIC Number" value="'.$nic.'" required><br>
+                                            <input type="text" name="idc" class="input-text" placeholder="idc Number" value="'.$idc.'" required><br>
                                         </td>
                                     </tr>
                                     <tr>

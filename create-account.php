@@ -45,7 +45,7 @@ if($_POST){
     $lname=$_SESSION['personal']['lname'];
     $name=$fname." ".$lname;
     $address=$_SESSION['personal']['address'];
-    $nic=$_SESSION['personal']['nic'];
+    $idc=$_SESSION['personal']['idc'];
     $dob=$_SESSION['personal']['dob'];
     $email=$_POST['newemail'];
     $tele=$_POST['tele'];
@@ -62,9 +62,9 @@ if($_POST){
             $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">此信箱已被註冊過</label>';
         }else{
             //TODO
-            $database->query("insert into patient(pemail,pname,ppassword, paddress, pnic,pdob,ptel) values('$email','$name','$newpassword','$address','$nic','$dob','$tele');");
+            $database->query("insert into patient(pemail,pname,ppassword, paddress, pidc,pdob,ptel) values('$email','$name','$newpassword','$address','$idc','$dob','$tele');");
 
-            //print_r("insert into patient values($pid,'$email','$fname','$lname','$newpassword','$address','$nic','$dob','$tele');");
+            //print_r("insert into patient values($pid,'$email','$fname','$lname','$newpassword','$address','$idc','$dob','$tele');");
             $_SESSION["user"]=$email;
             $_SESSION["usertype"]="p";
             $_SESSION["username"]=$fname;

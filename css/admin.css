@@ -72,16 +72,16 @@
 
 .menu-button:hover{
     cursor: pointer;
-    background-color:var(--btnice);
+    background-color:var(--btidce);
 }
 
 .menu-active{
-    color:var(--btnnicetext);
+    color:var(--btnidcetext);
     
 }
 
 .menu-items1-active{
-    color:var(--btnnicetext);
+    color:var(--btnidcetext);
     background-image: url('../img/search.svg');
     background-position: 10px 50%;
     background-repeat: no-repeat;

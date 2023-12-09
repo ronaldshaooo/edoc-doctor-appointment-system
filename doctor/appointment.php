@@ -280,7 +280,7 @@
                                         
                                         substr($pname,0,25)
                                         .'</td >
-                                        <td style="text-align:center;font-size:23px;font-weight:500; color: var(--btnnicetext);">
+                                        <td style="text-align:center;font-size:23px;font-weight:500; color: var(--btnidcetext);">
                                         '.$apponum.'
                                         
                                         </td>
@@ -390,17 +390,7 @@
                                         
                         echo     '       </select><br><br>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="nop" class="form-label">Number of Patients/Appointment Numbers : </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <input type="number" name="nop" class="input-text" min="0"  placeholder="The final appointment number for this session depends on this number" required><br>
-                                </td>
-                            </tr>
+                            </tr>  
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="date" class="form-label">診療日期: </label>
@@ -521,7 +511,7 @@
             $email=$row["docemail"];
             
             $spcil_name="耳鼻喉科";
-            $nic=$row['docnic'];
+            $idc=$row['docidc'];
             $tele=$row['doctel'];
             echo '
             <div id="popup1" class="overlay">
@@ -566,12 +556,12 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
+                                    <label for="idc" class="form-label">idc: </label>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                '.$nic.'<br><br>
+                                '.$idc.'<br><br>
                                 </td>
                             </tr>
                             <tr>

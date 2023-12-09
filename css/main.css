@@ -2,8 +2,8 @@
 :root {
   --primarycolor: #0A76D8;
   --primarycolorhover: #006dd3;
-  --btnice:#D8EBFA;
-  --btnnicetext:#1b62b3;
+  --btidce:#D8EBFA;
+  --btnidcetext:#1b62b3;
 }
 
 body{
@@ -346,7 +346,7 @@ input[type=search]:focus {
 }
 
 .menu-btn:hover{
-  background-color: var(--btnice);
+  background-color: var(--btidce);
   color: var(--primarycolor);
 }
 

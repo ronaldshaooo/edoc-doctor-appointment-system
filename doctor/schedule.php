@@ -169,7 +169,7 @@
                 
                 <?php
 
-                $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime,schedule.nop from schedule inner join doctor on schedule.docid=doctor.docid where doctor.docid=$userid ";
+                $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime from schedule inner join doctor on schedule.docid=doctor.docid where doctor.docid=$userid ";
                     if($_POST){
                         //print_r($_POST);
                         $sqlpt1="";
@@ -246,7 +246,6 @@
                                     $docname=$row["docname"];
                                     $scheduledate=$row["scheduledate"];
                                     $scheduletime=$row["scheduletime"];
-                                    $nop=$row["nop"];
                                     echo '<tr>
                                         <td> &nbsp;'.
                                         substr($title,0,30)
@@ -254,9 +253,6 @@
                                         
                                         <td style="text-align:center;">
                                             '.substr($scheduledate,0,10).' '.substr($scheduletime,0,5).'
-                                        </td>
-                                        <td style="text-align:center;">
-                                            '.$nop.'
                                         </td>
 
                                         <td>
@@ -314,7 +310,7 @@
             </div>
             '; 
         }elseif($action=='view'){
-            $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime,schedule.nop from schedule inner join doctor on schedule.docid=doctor.docid  where  schedule.scheduleid=$id";
+            $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime from schedule inner join doctor on schedule.docid=doctor.docid  where  schedule.scheduleid=$id";
             $result= $database->query($sqlmain);
             $row=$result->fetch_assoc();
             $docname=$row["docname"];
@@ -322,10 +318,6 @@
             $title=$row["title"];
             $scheduledate=$row["scheduledate"];
             $scheduletime=$row["scheduletime"];
-            
-           
-            $nop=$row['nop'];
-
 
             $sqlmain12= "select * from appointment inner join patient on patient.pid=appointment.pid inner join schedule on schedule.scheduleid=appointment.scheduleid where schedule.scheduleid=$id;";
             $result12= $database->query($sqlmain12);
@@ -372,7 +364,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">Scheduled 日期: </label>
+                                    <label for="idc" class="form-label">Scheduled 日期: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -390,13 +382,6 @@
                                 '.$scheduletime.'<br><br>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="spec" class="form-label"><b>Patients that Already registerd for this session:</b> ('.$result12->num_rows."/".$nop.')</label>
-                                    <br><br>
-                                </td>
-                            </tr>
-
                             
                             <tr>
                             <td colspan="4">
@@ -463,7 +448,7 @@
                                                  
                                                  substr($pname,0,25)
                                                  .'</td >
-                                                 <td style="text-align:center;font-size:23px;font-weight:500; color: var(--btnnicetext);">
+                                                 <td style="text-align:center;font-size:23px;font-weight:500; color: var(--btnidcetext);">
                                                  '.$apponum.'
                                                  
                                                  </td>
