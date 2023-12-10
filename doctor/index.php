@@ -87,7 +87,7 @@
                 </tr>
                 <tr class="menu-row">
                     <td class="menu-btn menu-icon-appoinment">
-                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">我的看診清單</p></a></div>
+                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">看診紀錄清單</p></a></div>
                     </td>
                 </tr>
                 
