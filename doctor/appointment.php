@@ -71,7 +71,7 @@
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-dashbord " >
-                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">儀錶板</p></a></div></a>
+                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">儀表板</p></a></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">
@@ -235,7 +235,7 @@
                                 
                                 <th class="table-headin">
                                     
-                                    事件
+                                    操作
                                     
                                 </tr>
                         </thead>

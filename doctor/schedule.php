@@ -225,7 +225,7 @@
                                     <img src="../img/notfound.svg" width="25%">
                                     
                                     <br>
-                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">我們找不到這個關鍵字結果 !</p>
+                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">查無結果 !</p>
                                     <a class="non-style-link" href="schedule.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; 顯示所有診療時段 &nbsp;</font></button>
                                     </a>
                                     </center>
@@ -290,15 +290,15 @@
             <div id="popup1" class="overlay">
                     <div class="popup">
                     <center>
-                        <h2>Are you sure?</h2>
+                        <h2>確定嗎?</h2>
                         <a class="close" href="schedule.php">&times;</a>
                         <div class="content">
-                            You want to delete this record<br>('.substr($nameget,0,40).').
+                            刪除該筆看診時段<br>('.substr($nameget,0,40).').
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
-                        <a href="delete-session.php?id='.$id.'" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
-                        <a href="schedule.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
+                        <a href="delete-session.php?id='.$id.'" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;確定&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="schedule.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;取消&nbsp;&nbsp;</font></button></a>
 
                         </div>
                     </center>
@@ -332,7 +332,7 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">瀏覽細節.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">瀏覽細節</p><br><br>
                                 </td>
                             </tr>
                             
@@ -360,7 +360,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="idc" class="form-label">Scheduled 日期: </label>
+                                    <label for="idc" class="form-label">日期: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -370,7 +370,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="Tele" class="form-label">診療時段: </label>
+                                    <label for="Tele" class="form-label">時段: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -387,20 +387,20 @@
                                  <thead>
                                  <tr>   
                                         <th class="table-headin">
-                                             Patient ID
+                                             病患ID
                                          </th>
                                          <th class="table-headin">
-                                             Patient name
+                                             病患姓名
                                          </th>
                                          <th class="table-headin">
                                              
-                                             Appointment number
+                                             預約號碼
                                              
                                          </th>
                                         
                                          
                                          <th class="table-headin">
-                                             Patient Telephone
+                                             病患電話
                                          </th>
                                          
                                  </thead>
