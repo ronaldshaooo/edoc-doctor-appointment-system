@@ -79,7 +79,7 @@
                          </tr>
                          <tr>
                              <td colspan="2">
-                                 <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                 <a href="../logout.php" ><input type="button" value="登出" class="logout-btn btn-primary-soft btn"></a>
                              </td>
                          </tr>
                  </table>
@@ -87,23 +87,23 @@
              </tr>
              <tr class="menu-row" >
                     <td class="menu-btn menu-icon-home " >
-                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">Home</p></a></div></a>
+                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">首頁</p></a></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">
                     <td class="menu-btn menu-icon-doctor">
-                        <a href="doctors.php" class="non-style-link-menu"><div><p class="menu-text">All Doctors</p></a></div>
+                        <a href="doctors.php" class="non-style-link-menu"><div><p class="menu-text">所有醫生</p></a></div>
                     </td>
                 </tr>
                 
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-session menu-active menu-icon-session-active">
-                        <a href="schedule.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Scheduled Sessions</p></div></a>
+                        <a href="schedule.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">門診時刻表</p></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-appoinment">
-                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">My Bookings</p></a></div>
+                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">我的預約</p></a></div>
                     </td>
                 </tr>
                 
@@ -114,12 +114,12 @@
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                     <td width="13%" >
-                    <a href="schedule.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
+                    <a href="schedule.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">上一頁</font></button></a>
                     </td>
                     <td >
                             <form action="schedule.php" method="post" class="header-search">
 
-                                        <input type="search" name="search" class="input-text header-searchbar" placeholder="Search Doctor name or Email or Date (YYYY-MM-DD)" list="doctors" >&nbsp;&nbsp;
+                                        <input type="search" name="search" class="input-text header-searchbar" placeholder="搜尋醫生姓名" list="doctors" >&nbsp;&nbsp;
                                         
                                         <?php
                                             echo '<datalist id="doctors">';
@@ -150,12 +150,12 @@
             ?>
                                         
                                 
-                                        <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                                        <input type="Submit" value="搜尋" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                                         </form>
                     </td>
                     <td width="15%">
                         <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
-                            Today's Date
+                            今天日期
                         </p>
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
@@ -239,21 +239,19 @@
                                             
                                                 <div style="width:100%">
                                                         <div class="h1-search" style="font-size:25px;">
-                                                            Session Details
+                                                            門診細節
                                                         </div><br><br>
                                                         <div class="h3-search" style="font-size:18px;line-height:30px">
-                                                            Doctor name:  &nbsp;&nbsp;<b>'.$docname.'</b><br>
-                                                            Doctor Email:  &nbsp;&nbsp;<b>'.$docemail.'</b> 
+                                                            醫生姓名:  &nbsp;&nbsp;<b>'.$docname.'</b><br>
+                                                            醫生信箱:  &nbsp;&nbsp;<b>'.$docemail.'</b> 
                                                         </div>
                                                         <div class="h3-search" style="font-size:18px;">
                                                           
                                                         </div><br>
                                                         <div class="h3-search" style="font-size:18px;">
-                                                            Session Title: '.$title.'<br>
-                                                            Session Scheduled Date: '.$scheduledate.'<br>
-                                                            Session Starts : '.$scheduletime.'<br>
-                                                            Channeling fee : <b>LKR.2 000.00</b>
-
+                                                            門診: '.$title.'<br>
+                                                            日期: '.$scheduledate.'<br>
+                                                            時段 : '.$scheduletime.'<br>
                                                         </div>
                                                         <br>
                                                         
@@ -269,7 +267,7 @@
                                             
                                                 <div style="width:100%;padding-top: 15px;padding-bottom: 15px;">
                                                         <div class="h1-search" style="font-size:20px;line-height: 35px;margin-left:8px;text-align:center;">
-                                                            Your Appointment Number
+                                                            您的預約號碼
                                                         </div>
                                                         <center>
                                                         <div class=" dashboard-icons" style="margin-left: 0px;width:90%;font-size:70px;font-weight:800;text-align:center;color:var(--btnidctext);background-color: var(--btidce)">'.$apponum.'</div>
@@ -286,7 +284,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input type="Submit" class="login-btn btn-primary btn btn-book" style="margin-left:10px;padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;width:95%;text-align: center;" value="Book now" name="booknow"></button>
+                                                <input type="Submit" class="login-btn btn-primary btn btn-book" style="margin-left:10px;padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;width:95%;text-align: center;" value="預約" name="booknow"></button>
                                             </form>
                                             </td>
                                         </tr>

@@ -33,7 +33,6 @@
             $apponum=$_POST["apponum"];
             $scheduleid=$_POST["scheduleid"];
             $date=$_POST["date"];
-            $scheduleid=$_POST["scheduleid"];
 
             $sqlcheck= "select count(*)  from appointment where pid=? and scheduleid=?";
             $stmt = $database->prepare($sqlcheck);
@@ -55,7 +54,7 @@
                 
                 //3個月內3次沒報到
                 if($blacklistcount < 3){
-                    $sql2="insert into appointment(pid,apponum,appodate) values ($userid,$apponum,'$date')";
+                    $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
                     $result= $database->query($sql2);
                     //echo $apponom;
                     header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
