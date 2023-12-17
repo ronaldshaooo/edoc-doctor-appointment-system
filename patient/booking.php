@@ -86,8 +86,8 @@
                  </td>
              </tr>
              <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-home " >
-                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">首頁</p></a></div></a>
+                    <td class="menu-btn menu-icon-appoinment">
+                        <a href="index.php" class="non-style-link-menu"><div><p class="menu-text">我的預約</p></a></div>
                     </td>
                 </tr>
                 <tr class="menu-row">
@@ -101,11 +101,7 @@
                         <a href="schedule.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">門診時刻表</p></div></a>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-appoinment">
-                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">我的預約</p></a></div>
-                    </td>
-                </tr>
+                
                 
             </table>
         </div>

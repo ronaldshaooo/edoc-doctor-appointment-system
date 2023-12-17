@@ -57,13 +57,13 @@
                     $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
                     $result= $database->query($sql2);
                     //echo $apponom;
-                    header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
+                    header("location: index.php?action=booking-added&id=".$apponum."&titleget=none");
                 }else{
                     //黑名單
-                    header("location: appointment.php?action=booking-blacklist&id=".$count."&titleget=none");
+                    header("location: index.php?action=booking-blacklist&id=".$count."&titleget=none");
                 }
             }else{
-                header("location: appointment.php?action=booking-reject&id=".$count."&titleget=none");
+                header("location: index.php?action=booking-reject&id=".$count."&titleget=none");
             }
         }
     }
