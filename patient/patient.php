@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Patients</title>
+    <title>台北綜合診所</title>
     <style>
         .popup{
             animation: transitionIn-Y-bottom 0.5s;
@@ -369,13 +369,13 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">瀏覽細節.</p><br><br>
                                 </td>
                             </tr>
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
-                                    <label for="name" class="form-label">Patient ID: </label>
+                                    <label for="name" class="form-label">病患 ID: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -388,7 +388,7 @@
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
-                                    <label for="name" class="form-label">Name: </label>
+                                    <label for="name" class="form-label">姓名: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -399,7 +399,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="Email" class="form-label">Email: </label>
+                                    <label for="Email" class="form-label">信箱: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -409,17 +409,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="idc" class="form-label">idc: </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                '.$idc.'<br><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="Tele" class="form-label">Telephone: </label>
+                                    <label for="Tele" class="form-label">電話: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -429,7 +419,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="spec" class="form-label">Address: </label>
+                                    <label for="spec" class="form-label">地址: </label>
                                     
                                 </td>
                             </tr>
@@ -441,7 +431,7 @@
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
-                                    <label for="name" class="form-label">Date of Birth: </label>
+                                    <label for="name" class="form-label">生日: </label>
                                 </td>
                             </tr>
                             <tr>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
         
-    <title>Create Account</title>
+    <title>台北綜合診所</title>
     <style>
         .container{
             animation: transitionIn-X 0.5s;

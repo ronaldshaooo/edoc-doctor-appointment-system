@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Appointments</title>
+    <title>台北綜合診所</title>
     <style>
         .popup{
             animation: transitionIn-Y-bottom 0.5s;
@@ -549,16 +549,6 @@
                             <tr>
                                 <td class="label-td" colspan="2">
                                 '.$email.'<br><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="idc" class="form-label">idc: </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                '.$idc.'<br><br>
                                 </td>
                             </tr>
                             <tr>

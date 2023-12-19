@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Schedule</title>
+    <title>台北綜合診所</title>
     <style>
         .popup{
             animation: transitionIn-Y-bottom 0.5s;

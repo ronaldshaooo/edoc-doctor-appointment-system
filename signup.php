@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
         
-    <title>Sign Up</title>
+    <title>台北綜合診所</title>
     
 </head>
 <body>
