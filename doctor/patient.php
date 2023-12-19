@@ -73,7 +73,7 @@
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-dashbord" >
-                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">儀表本</p></a></div></a>
+                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">首頁</p></a></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">

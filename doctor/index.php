@@ -82,7 +82,7 @@
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-dashbord menu-active menu-icon-dashbord-active" >
-                        <a href="index.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">儀表板</p></a></div></a>
+                        <a href="index.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">首頁</p></a></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">
@@ -110,7 +110,7 @@
                         <tr >
                             
                             <td colspan="1" class="nav-bar" >
-                            <p style="font-size: 23px;padding-left:12px;font-weight: 600;margin-left:20px;">儀表板</p>
+                            <p style="font-size: 23px;padding-left:12px;font-weight: 600;margin-left:20px;">首頁</p>
                           
                             </td>
                             <td width="25%">
