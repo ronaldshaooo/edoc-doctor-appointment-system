@@ -421,7 +421,7 @@
                         <div class="popup">
                         <center>
                         <br><br><br><br>
-                            <h2>Edit Successfully!</h2>
+                            <h2>編輯成功!</h2>
                             <a class="close" href="doctors.php">&times;</a>
                             <div class="content">
                                 

