@@ -302,15 +302,15 @@
                     <div class="popup">
                     <center>
                     <br><br>
-                        <h2>Booking Successfully.</h2>
+                        <h2>成功預約</h2>
                         <a class="close" href="index.php">&times;</a>
                         <div class="content">
-                        Your Appointment number is '.$id.'.<br><br>
+                        您的預約號碼是 '.$id.'.<br><br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
                         
-                        <a href="index.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;OK&nbsp;&nbsp;</font></button></a>
+                        <a href="index.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;確定&nbsp;&nbsp;</font></button></a>
                         <br><br><br><br>
                         </div>
                     </center>
@@ -374,8 +374,8 @@
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
-                        <a href="delete-index.php?id='.$id.'&rank=0" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
-                        <a href="index.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
+                        <a href="delete-appointment.php?id='.$id.'&rank=0" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;確定&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="index.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;取消&nbsp;&nbsp;</font></button></a>
 
                         </div>
                     </center>

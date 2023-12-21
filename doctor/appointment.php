@@ -84,12 +84,7 @@
                     <td class="menu-btn menu-icon-session">
                         <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">我的診療時段</p></div></a>
                     </td>
-                </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-patient">
-                        <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">我的病患</p></a></div>
-                    </td>
-                </tr>                
+                </tr>           
             </table>
         </div>
         <div class="dash-body">
@@ -467,8 +462,8 @@
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
-                        <a href="delete-appointment.php?id='.$id.'&delete=0" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
-                        <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
+                        <a href="delete-appointment.php?id='.$id.'&delete=0" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;確定&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;取消&nbsp;&nbsp;</font></button></a>
 
                         </div>
                     </center>
@@ -492,8 +487,8 @@
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
-                        <a href="delete-appointment.php?id='.$id.'&delete=1" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
-                        <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
+                        <a href="delete-appointment.php?id='.$id.'&delete=1" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;確定&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="appointment.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;取消&nbsp;&nbsp;</font></button></a>
 
                         </div>
                     </center>

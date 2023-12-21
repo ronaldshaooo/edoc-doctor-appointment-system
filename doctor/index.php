@@ -96,12 +96,6 @@
                         <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">我的診療時段</p></div></a>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-patient">
-                        <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">我的病患</p></a></div>
-                    </td>
-                </tr>
-                
             </table>
         </div>
         <div class="dash-body" style="margin-top: 15px">

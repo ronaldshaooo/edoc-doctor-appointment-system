@@ -60,7 +60,7 @@
                 header('location: doctor/index.php');
 
             }else{
-                $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
+                $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">帳號或密碼錯誤</label>';
             }
         }else if($result_patient->num_rows==1){
             //TODO
@@ -75,10 +75,10 @@
                 header('location: patient/index.php');
 
             }else{
-                $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
+                $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">帳號或密碼錯誤</label>';
             }
         }else{
-            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">We cant found any acount for this email.</label>';
+            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">帳號或密碼錯誤</label>';
         }
     }else{
         $error='<label for="promter" class="form-label"></label>';
