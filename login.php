@@ -44,7 +44,8 @@
         $password=$_POST['userpassword'];
         
         $error='<label for="promter" class="form-label"></label>';
-
+        
+        $result_admin = $database->query("select * from admin where aemail='$email'");
         $result_doctor = $database->query("select * from doctor where docemail='$email'");
         $result_patient = $database->query("select * from patient where pemail='$email'");
         
@@ -73,6 +74,21 @@
                 $_SESSION['usertype']='p';
                 
                 header('location: patient/index.php');
+
+            }else{
+                $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">帳號或密碼錯誤</label>';
+            }
+        }else if($result_admin->num_rows==1){
+            //TODO
+            $checker = $database->query("select * from admin where aemail='$email' and apassword='$password'");
+            if ($checker->num_rows==1){
+
+
+                //   Patient dashbord
+                $_SESSION['user']=$email;
+                $_SESSION['usertype']='a';
+                
+                header('location: admin/index.php');
 
             }else{
                 $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">帳號或密碼錯誤</label>';
