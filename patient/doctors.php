@@ -306,7 +306,7 @@
                         <h2></h2>
                         <a class="close" href="doctors.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            看診預約系統<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
