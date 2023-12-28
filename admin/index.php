@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Dashboard</title>
+    <title>台北綜合診所</title>
     <style>
         .dashbord-tables{
             animation: transitionIn-Y-over 0.5s;
@@ -57,8 +57,8 @@
                                     <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
                                 </td>
                                 <td style="padding:0px;margin:0px;">
-                                    <p class="profile-title">Administrator</p>
-                                    <p class="profile-subtitle">admin@edoc.com</p>
+                                    <p class="profile-title">系統管理者</p>
+                                    <p class="profile-subtitle">admin@test.com</p>
                                 </td>
                             </tr>
                             <tr>
@@ -126,11 +126,11 @@
                 </tr>
                
                 <tr >
-                    <td colspan="2" style="padding-top:30px;">
-                        <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">新增醫師</p>
+                    <td colspan="1" style="padding-top:100px;padding-left: 45px;">
+                        <p class="heading-main12" width="100% style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">新增醫師</p>
                     </td>
-                    <td colspan="2">
-                        <a href="?action=add&id=none&error=0" class="non-style-link"><button  class="login-btn btn-primary btn button-icon"  style="display: flex;justify-content: center;align-items: center;margin-left:75px;background-image: url('../img/icons/add.svg');">新增</font></button>
+                    <td colspan="2" style="padding-top:100px; padding-left: 45px;">
+                        <a href="?action=add&id=none&error=0" class="non-style-link"><button  class="login-btn btn-primary btn button-icon"  style="display: flex;justify-content: center;align-items: center;margin-left:0px;background-image: url('../img/icons/add.svg');">新增</font></button>
                             </a></td>
                 </tr>
                 
@@ -209,7 +209,7 @@
                         <h2></h2>
                         <a class="close" href="index.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            看診預約系統<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
