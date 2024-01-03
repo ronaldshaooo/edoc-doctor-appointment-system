@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Generation Time: Nov 11, 2023 at 04:32 PM
--- Server version: 5.7.26
--- PHP Version: 8.2.4
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -83,8 +74,8 @@ INSERT INTO `appointment` (`appoid`, `pid`, `apponum`, `scheduleid`, `appodate`)
 (16, 5, 6, 2, '2023-12-31'),
 (17, 4, 7, 2, '2023-12-31'),
 (18, 3, 8, 2, '2024-01-01'),
-(19, 2, 9, 2, '2024-01-01'),
-(20, 1, 10, 2, '2024-01-01'),
+(19, 1, 9, 2, '2024-01-01'),
+(20, 2, 10, 2, '2024-01-01'),
 (21, 10, 1, 3, '2024-01-01'),
 (22, 2, 1, 3, '2024-01-01'),
 (23, 3, 2, 3, '2024-01-01'),
